@@ -1,0 +1,139 @@
+import { College } from "@/types/college";
+
+export const colleges: College[] = [
+  {
+    id: 1,
+    name: "Indian Institute of Technology Madras",
+    location: "Chennai",
+    fees: 250000,
+    rating: 4.8,
+    image:
+      "https://images.unsplash.com/photo-1562774053-701939374585",
+
+    placements: {
+      averagePackage: "18 LPA",
+      highestPackage: "1.2 CPA",
+    },
+
+    courses: ["B.Tech", "M.Tech", "MBA"],
+  },
+
+  {
+    id: 2,
+    name: "Delhi Technological University",
+    location: "Delhi",
+    fees: 180000,
+    rating: 4.5,
+    image:
+      "data:image/jpeg;base64,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",
+
+    placements: {
+      averagePackage: "12 LPA",
+      highestPackage: "82 LPA",
+    },
+
+    courses: ["B.Tech", "MBA", "BBA"],
+  },
+
+  {
+    id: 3,
+    name: "Vellore Institute of Technology",
+    location: "Vellore",
+    fees: 220000,
+    rating: 4.3,
+    image:
+      "https://images.unsplash.com/photo-1541339907198-e08756dedf3f",
+
+    placements: {
+      averagePackage: "9 LPA",
+      highestPackage: "75 LPA",
+    },
+
+    courses: ["B.Tech", "MCA", "MBA"],
+  },
+
+  {
+    id: 4,
+    name: "BITS Pilani",
+    location: "Pilani",
+    fees: 520000,
+    rating: 4.9,
+    image:
+      "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b",
+
+    placements: {
+      averagePackage: "22 LPA",
+      highestPackage: "1.5 CPA",
+    },
+
+    courses: ["B.Tech", "M.Tech"],
+  },
+
+  {
+    id: 5,
+    name: "Manipal Institute of Technology",
+    location: "Manipal",
+    fees: 350000,
+    rating: 4.2,
+    image:
+      "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a",
+
+    placements: {
+      averagePackage: "8 LPA",
+      highestPackage: "54 LPA",
+    },
+
+    courses: ["B.Tech", "MBA"],
+  },
+
+  {
+    id: 6,
+    name: "SRM Institute of Science and Technology",
+    location: "Chennai",
+    fees: 300000,
+    rating: 4.1,
+    image:
+      "https://images.unsplash.com/photo-1564981797816-1043664bf78d",
+
+    placements: {
+      averagePackage: "7 LPA",
+      highestPackage: "50 LPA",
+    },
+
+    courses: ["B.Tech", "BBA", "MBA"],
+  },
+
+  {
+    id: 7,
+    name: "National Institute of Technology Trichy",
+    location: "Trichy",
+    fees: 170000,
+    rating: 4.7,
+    image:
+      "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3",
+
+    placements: {
+      averagePackage: "14 LPA",
+      highestPackage: "80 LPA",
+    },
+
+    courses: ["B.Tech", "M.Tech"],
+  },
+
+  {
+    id: 8,
+    name: "Amity University",
+    location: "Noida",
+    fees: 400000,
+    rating: 3.9,
+    image:
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
+
+    placements: {
+      averagePackage: "6 LPA",
+      highestPackage: "32 LPA",
+    },
+
+    courses: ["B.Tech", "Law", "MBA"],
+  },
+];
